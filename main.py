@@ -5,6 +5,7 @@ from supabase import create_client, Client
 from io import  BytesIO 
 from pydantic import BaseModel
 
+import uvicorn
 
 MODEL ="arielreplicate/instruct-pix2pix"
 MODEL_VERSION = "10e63b0e6361eb23a0374f4d9ee145824d9d09f7a31dcd70803193ebc7121430"
@@ -56,3 +57,5 @@ async def read_root(
    
 
 
+if __name__ == "__main__":
+    uvicorn.run("main:app",host="https://snap-clone-server-nebaaaazzzz.vercel.app", port=5000, log_level="info")

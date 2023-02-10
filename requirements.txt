@@ -2,3 +2,4 @@ fastapi
 replicate
 supabase
 python-multipart
+uvicorn
