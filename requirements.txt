@@ -1,0 +1,4 @@
+fastapi
+replicate
+supabase
+python-multipart
